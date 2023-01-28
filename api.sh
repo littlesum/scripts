@@ -5,4 +5,8 @@
 #
 curl -X POST -H "Authorization: Bearer token" \
  	"https://yourtruenas.com/api/v2.0/certificate" \ 
-	 -k -vv -d '{"var1":data1,"var2":data2}'
+	 -k -vv -d '{"var1":data1,"var2":data2}
+'
+curl -X GET -H "Authorization: Bearer token" \
+ 	"https://yourtruenas.com/api/v2.0/alert/list" \ 
+	-k 
